@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f1f5f8;
+  line-height: 2.2;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+  color: #e94949;
+  cursor: pointer;
+}
+
+.fa-bars:hover {
+  color: black;
+}
+
+.menu a {
+  color: grey;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+
+.menu a:hover {
+  background: #f8a5a5;
+  color: #e94949;
+  padding-left: 1.5rem;
+}
+
+.menu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.show-menu {
+  height: 10rem;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .nav-main {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+  .fa-bars {
+    display: none;
+  }
+
+  .menu {
+    height: auto;
+    display: flex;
+  }
+
+  .menu a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .menu a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+#landing_pg {
+  background-image: url("landing\ page1.jpg");
+  margin: 0%;
+  background-position: center center;
+  background-size: cover;
+  padding: 5%;
+  display: flex;
+}
+#landing_pg .intro {
+  font-family: "Maname", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  margin: 20px;
+}
+#landing_pg .intro h3 {
+  font-size: 80px;
+  color: aqua;
+}
+#landing_pg .intro p {
+  margin: 0%;
+  margin-bottom: 12%;
+  padding: 2%;
+  width: 100%;
+  font-size: 20px;
+  color: aqua;
+}
+
+#container {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#container .fade {
+  border: 1px solid whitesmoke;
+  border-radius: 2%;
+  width: 400px;
+}
+footer {
+  width: 100%;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 50px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+.footer_logo {
+  width: 80px;
+  position: relative;
+  top: -23px;
+  left: -20px;
+}
+.footer_about {
+  position: relative;
+  top: -23px;
+}
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer_email {
+  width: fit-content;
+  border-bottom: 1px solid #f66335;
+  margin: 20px 0;
+}
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+.col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.col form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f66335;
+  margin-bottom: 50px;
+}
+.col form .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.col form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+.col form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.col form button .icon_right {
+  font-size: 16px;
+  color: #ccc;
+}
+.col .social_icons .social_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #fff;
+  background: #f66335;
+  margin-right: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+footer .copyright {
+  text-align: center;
+}
+.bottom_line {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.bottom_line span {
+  width: 15px;
+  height: 100%;
+  background: #f66335;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moveline 2s linear infinite;
+}
+@keyframes moveline {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
